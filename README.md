@@ -4,6 +4,7 @@ This is a complete **Software Quality Engineering** project implementation for t
 
 ## Tech Stack
 
+### Java/Selenium Testing
 - **Java 17**
 - **Maven**
 - **Selenium WebDriver**
@@ -14,11 +15,20 @@ This is a complete **Software Quality Engineering** project implementation for t
 - **JDBC** (MySQL)
 - **Jedis** (Redis)
 
+### Python Testing
+- **Python 3.13**
+- **Pynguin** (Automated test generation)
+- **Pytest** (Test execution)
+
 ## Project Structure
 
 ```
 SQE_UI_Framework/
 ├── pom.xml                                    # Maven dependencies
+├── my_code.py                                 # Python utility functions
+├── tests/                                     # Pynguin-generated test cases
+│   └── test_my_code.py                       # 12 automated test cases
+├── reflection.md                              # Analysis of generated tests
 ├── src/test/java/com/nuces/sqe/framework/
 │   ├── core/                                 # DriverFactory, ConfigReader
 │   ├── pages/                                # Page Object Model (LoginPage, ProductsPage)
@@ -33,28 +43,35 @@ SQE_UI_Framework/
 
 ## Prerequisites
 
+### For Java/Selenium Tests
 1. **Java 17+** installed
 2. **Maven** installed
 3. **Chrome browser** installed
 4. **ChromeDriver** - Download from https://chromedriver.chromium.org/ and place in `drivers/` folder
 
+### For Python/Pynguin Tests
+1. **Python 3.13+** installed
+2. **pip** package manager
+
 ## Quick Start
 
-### Step 1: Configure WebDriver
+### Java/Selenium Tests
+
+#### Step 1: Configure WebDriver
 
 1. Download ChromeDriver from https://chromedriver.chromium.org/
 2. Create `drivers` folder in project root: `SQE_UI_Framework/drivers/`
 3. Place `chromedriver.exe` in that folder
 4. Or update `config.properties` with your ChromeDriver path
 
-### Step 2: Run Tests
+#### Step 2: Run Tests
 
 ```bash
 cd SQE_UI_Framework
 mvn clean test
 ```
 
-### Step 3: View Allure Report
+#### Step 3: View Allure Report
 
 ```bash
 mvn allure:serve
@@ -64,6 +81,69 @@ This will:
 - Generate Allure report from test results
 - Open report automatically in your browser
 - Show passed/failed tests, screenshots, step logs
+
+### Python/Pynguin Tests
+
+#### Step 1: Install Dependencies
+
+```bash
+pip install pynguin pytest
+```
+
+#### Step 2: Generate Tests with Pynguin
+
+```bash
+$env:PYNGUIN_DANGER_AWARE="1"
+python -m pynguin --project-path . --module-name my_code --output-path tests
+```
+
+#### Step 3: Run Tests with Pytest
+
+```bash
+python -m pytest tests/ -v
+```
+
+## Python Code & Automated Test Generation
+
+### Python Utility Functions (`my_code.py`)
+
+The project includes four utility functions demonstrating automated test generation:
+
+1. **`is_prime(n)`** - Checks if a number is prime
+2. **`factorial(n)`** - Calculates factorial of a non-negative integer
+3. **`is_palindrome(text)`** - Checks if a string is a palindrome
+4. **`fibonacci(n)`** - Generates the nth Fibonacci number
+
+### Pynguin Test Generation
+
+**Pynguin** is an automated unit test generation tool for Python that uses search-based algorithms to create test cases.
+
+#### Generated Tests
+- **12 test cases** automatically generated in `tests/test_my_code.py`
+- Coverage includes:
+  - Normal cases (valid inputs)
+  - Edge cases (boundary values, booleans, large numbers)
+  - Error handling (negative inputs, type mismatches)
+  - Exception testing using `pytest.raises()`
+
+#### Test Results
+- ✅ 12 tests passed successfully
+- Tests validate all four functions comprehensively
+- Includes proper exception handling verification
+
+### Reflection on Generated Tests
+
+See `reflection.md` for detailed analysis. Key findings:
+
+**Strengths:**
+- Comprehensive coverage including edge cases and error conditions
+- Proper pytest conventions and exception handling
+- Tests for boundary conditions (booleans, large numbers, negative values)
+
+**Areas for Improvement:**
+- Some tests marked with `@pytest.mark.xfail` indicate potential type issues
+- Test names could be more descriptive
+- Lack of comments explaining test purposes
 
 ## Test Cases Included (15+)
 
@@ -164,13 +244,23 @@ git push -u origin main
 
 ## Project Requirements Checklist
 
+### Java/Selenium Framework
 - ✅ **Test Automation Framework** - Complete with Page Object Model
 - ✅ **Gherkin + BDD** - All tests written in Cucumber
 - ✅ **15+ Test Cases** - Login, Product, Checkout, Form, UI Validation
 - ✅ **Allure Reports** - Integrated with screenshots
 - ✅ **Data-Driven Tests** - Excel, Database, Redis
 - ✅ **Design Patterns** - Page Object Model (POM)
+
+### Python/Pynguin Testing
+- ✅ **Python Code** - 4 utility functions with proper error handling
+- ✅ **Automated Test Generation** - Pynguin-generated test cases
+- ✅ **Test Execution** - 12 tests passing with pytest
+- ✅ **Reflection Document** - Analysis of generated tests
+
+### General
 - ✅ **GitHub Ready** - Clean project structure
+- ✅ **Documentation** - Comprehensive README
 
 ## Troubleshooting
 
@@ -188,9 +278,15 @@ git push -u origin main
 - Verify ChromeDriver is accessible
 - Check `config.properties` settings
 
+### Python/Pynguin Issues
+- Ensure Python 3.13+ is installed: `python --version`
+- Set environment variable: `$env:PYNGUIN_DANGER_AWARE="1"` (Windows PowerShell)
+- For Linux/Mac: `export PYNGUIN_DANGER_AWARE=1`
+- Install dependencies: `pip install pynguin pytest`
+
 ## Next Steps for Submission
 
-1. ✅ Run all tests successfully
+1. ✅ Run all tests successfully (Java + Python)
 2. ✅ Generate Allure report
 3. ✅ Record video of complete framework execution
 4. ✅ Push code to GitHub

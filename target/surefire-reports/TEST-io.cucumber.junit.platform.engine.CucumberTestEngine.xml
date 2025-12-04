@@ -1,0 +1,621 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="io.cucumber.junit.platform.engine.CucumberTestEngine" time="265.282" tests="15" errors="5" skipped="0" failures="1">
+  <properties>
+    <property name="java.specification.version" value="25"/>
+    <property name="webdriver.chrome.driver" value="C:\Users\Ali Qaisar\.cache\selenium\chromedriver\win64\143.0.7499.40\chromedriver.exe"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="C:\Users\Ali Qaisar\Documents\OS\SPM\SQE_UI_Framework\target\test-classes;C:\Users\Ali Qaisar\Documents\OS\SPM\SQE_UI_Framework\target\classes;C:\Users\Ali Qaisar\.m2\repository\org\seleniumhq\selenium\selenium-java\4.23.0\selenium-java-4.23.0.jar;C:\Users\Ali Qaisar\.m2\repository\org\seleniumhq\selenium\selenium-api\4.23.0\selenium-api-4.23.0.jar;C:\Users\Ali Qaisar\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\4.23.0\selenium-chrome-driver-4.23.0.jar;C:\Users\Ali Qaisar\.m2\repository\com\google\auto\service\auto-service-annotations\1.1.1\auto-service-annotations-1.1.1.jar;C:\Users\Ali Qaisar\.m2\repository\org\seleniumhq\selenium\selenium-chromium-driver\4.23.0\selenium-chromium-driver-4.23.0.jar;C:\Users\Ali Qaisar\.m2\repository\org\seleniumhq\selenium\selenium-json\4.23.0\selenium-json-4.23.0.jar;C:\Users\Ali Qaisar\.m2\repository\org\seleniumhq\selenium\selenium-manager\4.23.0\selenium-manager-4.23.0.jar;C:\Users\Ali Qaisar\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v125\4.23.0\selenium-devtools-v125-4.23.0.jar;C:\Users\Ali Qaisar\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v126\4.23.0\selenium-devtools-v126-4.23.0.jar;C:\Users\Ali Qaisar\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v127\4.23.0\selenium-devtools-v127-4.23.0.jar;C:\Users\Ali Qaisar\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v85\4.23.0\selenium-devtools-v85-4.23.0.jar;C:\Users\Ali Qaisar\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\4.23.0\selenium-edge-driver-4.23.0.jar;C:\Users\Ali Qaisar\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\4.23.0\selenium-firefox-driver-4.23.0.jar;C:\Users\Ali Qaisar\.m2\repository\org\seleniumhq\selenium\selenium-http\4.23.0\selenium-http-4.23.0.jar;C:\Users\Ali Qaisar\.m2\repository\dev\failsafe\failsafe\3.3.2\failsafe-3.3.2.jar;C:\Users\Ali Qaisar\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\4.23.0\selenium-ie-driver-4.23.0.jar;C:\Users\Ali Qaisar\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\4.23.0\selenium-remote-driver-4.23.0.jar;C:\Users\Ali Qaisar\.m2\repository\com\google\guava\guava\33.2.1-jre\guava-33.2.1-jre.jar;C:\Users\Ali Qaisar\.m2\repository\com\google\guava\failureaccess\1.0.2\failureaccess-1.0.2.jar;C:\Users\Ali Qaisar\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\Ali Qaisar\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\Ali Qaisar\.m2\repository\org\checkerframework\checker-qual\3.42.0\checker-qual-3.42.0.jar;C:\Users\Ali Qaisar\.m2\repository\com\google\errorprone\error_prone_annotations\2.26.1\error_prone_annotations-2.26.1.jar;C:\Users\Ali Qaisar\.m2\repository\com\google\j2objc\j2objc-annotations\3.0.0\j2objc-annotations-3.0.0.jar;C:\Users\Ali Qaisar\.m2\repository\io\opentelemetry\semconv\opentelemetry-semconv\1.25.0-alpha\opentelemetry-semconv-1.25.0-alpha.jar;C:\Users\Ali Qaisar\.m2\repository\io\opentelemetry\opentelemetry-api\1.40.0\opentelemetry-api-1.40.0.jar;C:\Users\Ali Qaisar\.m2\repository\io\opentelemetry\opentelemetry-context\1.40.0\opentelemetry-context-1.40.0.jar;C:\Users\Ali Qaisar\.m2\repository\io\opentelemetry\opentelemetry-exporter-logging\1.40.0\opentelemetry-exporter-logging-1.40.0.jar;C:\Users\Ali Qaisar\.m2\repository\io\opentelemetry\opentelemetry-sdk-common\1.40.0\opentelemetry-sdk-common-1.40.0.jar;C:\Users\Ali Qaisar\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure-spi\1.40.0\opentelemetry-sdk-extension-autoconfigure-spi-1.40.0.jar;C:\Users\Ali Qaisar\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure\1.40.0\opentelemetry-sdk-extension-autoconfigure-1.40.0.jar;C:\Users\Ali Qaisar\.m2\repository\io\opentelemetry\opentelemetry-api-incubator\1.40.0-alpha\opentelemetry-api-incubator-1.40.0-alpha.jar;C:\Users\Ali Qaisar\.m2\repository\io\opentelemetry\opentelemetry-sdk-trace\1.40.0\opentelemetry-sdk-trace-1.40.0.jar;C:\Users\Ali Qaisar\.m2\repository\io\opentelemetry\opentelemetry-sdk\1.40.0\opentelemetry-sdk-1.40.0.jar;C:\Users\Ali Qaisar\.m2\repository\io\opentelemetry\opentelemetry-sdk-metrics\1.40.0\opentelemetry-sdk-metrics-1.40.0.jar;C:\Users\Ali Qaisar\.m2\repository\io\opentelemetry\opentelemetry-sdk-logs\1.40.0\opentelemetry-sdk-logs-1.40.0.jar;C:\Users\Ali Qaisar\.m2\repository\net\bytebuddy\byte-buddy\1.14.18\byte-buddy-1.14.18.jar;C:\Users\Ali Qaisar\.m2\repository\org\seleniumhq\selenium\selenium-os\4.23.0\selenium-os-4.23.0.jar;C:\Users\Ali Qaisar\.m2\repository\org\apache\commons\commons-exec\1.4.0\commons-exec-1.4.0.jar;C:\Users\Ali Qaisar\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\4.23.0\selenium-safari-driver-4.23.0.jar;C:\Users\Ali Qaisar\.m2\repository\org\seleniumhq\selenium\selenium-support\4.23.0\selenium-support-4.23.0.jar;C:\Users\Ali Qaisar\.m2\repository\io\cucumber\cucumber-java\7.18.1\cucumber-java-7.18.1.jar;C:\Users\Ali Qaisar\.m2\repository\io\cucumber\cucumber-core\7.18.1\cucumber-core-7.18.1.jar;C:\Users\Ali Qaisar\.m2\repository\io\cucumber\cucumber-gherkin\7.18.1\cucumber-gherkin-7.18.1.jar;C:\Users\Ali Qaisar\.m2\repository\io\cucumber\cucumber-gherkin-messages\7.18.1\cucumber-gherkin-messages-7.18.1.jar;C:\Users\Ali Qaisar\.m2\repository\io\cucumber\messages\24.0.0\messages-24.0.0.jar;C:\Users\Ali Qaisar\.m2\repository\io\cucumber\testng-xml-formatter\0.2.0\testng-xml-formatter-0.2.0.jar;C:\Users\Ali Qaisar\.m2\repository\io\cucumber\query\12.2.0\query-12.2.0.jar;C:\Users\Ali Qaisar\.m2\repository\io\cucumber\tag-expressions\6.1.0\tag-expressions-6.1.0.jar;C:\Users\Ali Qaisar\.m2\repository\io\cucumber\cucumber-expressions\17.1.0\cucumber-expressions-17.1.0.jar;C:\Users\Ali Qaisar\.m2\repository\io\cucumber\datatable\7.18.1\datatable-7.18.1.jar;C:\Users\Ali Qaisar\.m2\repository\io\cucumber\cucumber-plugin\7.18.1\cucumber-plugin-7.18.1.jar;C:\Users\Ali Qaisar\.m2\repository\io\cucumber\docstring\7.18.1\docstring-7.18.1.jar;C:\Users\Ali Qaisar\.m2\repository\io\cucumber\html-formatter\21.4.1\html-formatter-21.4.1.jar;C:\Users\Ali Qaisar\.m2\repository\io\cucumber\junit-xml-formatter\0.5.0\junit-xml-formatter-0.5.0.jar;C:\Users\Ali Qaisar\.m2\repository\io\cucumber\ci-environment\10.0.1\ci-environment-10.0.1.jar;C:\Users\Ali Qaisar\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\Ali Qaisar\.m2\repository\io\cucumber\cucumber-junit-platform-engine\7.18.1\cucumber-junit-platform-engine-7.18.1.jar;C:\Users\Ali Qaisar\.m2\repository\org\junit\platform\junit-platform-engine\1.10.3\junit-platform-engine-1.10.3.jar;C:\Users\Ali Qaisar\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\Ali Qaisar\.m2\repository\org\junit\jupiter\junit-jupiter\5.10.2\junit-jupiter-5.10.2.jar;C:\Users\Ali Qaisar\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.10.2\junit-jupiter-api-5.10.2.jar;C:\Users\Ali Qaisar\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.10.2\junit-jupiter-params-5.10.2.jar;C:\Users\Ali Qaisar\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.10.2\junit-jupiter-engine-5.10.2.jar;C:\Users\Ali Qaisar\.m2\repository\org\junit\platform\junit-platform-suite-api\1.10.2\junit-platform-suite-api-1.10.2.jar;C:\Users\Ali Qaisar\.m2\repository\org\junit\platform\junit-platform-commons\1.10.2\junit-platform-commons-1.10.2.jar;C:\Users\Ali Qaisar\.m2\repository\org\junit\platform\junit-platform-suite-engine\1.10.2\junit-platform-suite-engine-1.10.2.jar;C:\Users\Ali Qaisar\.m2\repository\org\junit\platform\junit-platform-suite-commons\1.10.2\junit-platform-suite-commons-1.10.2.jar;C:\Users\Ali Qaisar\.m2\repository\io\qameta\allure\allure-junit5\2.28.0\allure-junit5-2.28.0.jar;C:\Users\Ali Qaisar\.m2\repository\io\qameta\allure\allure-junit-platform\2.28.0\allure-junit-platform-2.28.0.jar;C:\Users\Ali Qaisar\.m2\repository\io\qameta\allure\allure-test-filter\2.28.0\allure-test-filter-2.28.0.jar;C:\Users\Ali Qaisar\.m2\repository\org\junit\platform\junit-platform-launcher\1.10.3\junit-platform-launcher-1.10.3.jar;C:\Users\Ali Qaisar\.m2\repository\io\qameta\allure\allure-cucumber7-jvm\2.28.0\allure-cucumber7-jvm-2.28.0.jar;C:\Users\Ali Qaisar\.m2\repository\io\qameta\allure\allure-java-commons\2.28.0\allure-java-commons-2.28.0.jar;C:\Users\Ali Qaisar\.m2\repository\io\qameta\allure\allure-model\2.28.0\allure-model-2.28.0.jar;C:\Users\Ali Qaisar\.m2\repository\io\cucumber\gherkin\26.2.0\gherkin-26.2.0.jar;C:\Users\Ali Qaisar\.m2\repository\org\apache\poi\poi-ooxml\5.2.5\poi-ooxml-5.2.5.jar;C:\Users\Ali Qaisar\.m2\repository\org\apache\poi\poi\5.2.5\poi-5.2.5.jar;C:\Users\Ali Qaisar\.m2\repository\commons-codec\commons-codec\1.16.0\commons-codec-1.16.0.jar;C:\Users\Ali Qaisar\.m2\repository\org\apache\commons\commons-math3\3.6.1\commons-math3-3.6.1.jar;C:\Users\Ali Qaisar\.m2\repository\com\zaxxer\SparseBitSet\1.3\SparseBitSet-1.3.jar;C:\Users\Ali Qaisar\.m2\repository\org\apache\poi\poi-ooxml-lite\5.2.5\poi-ooxml-lite-5.2.5.jar;C:\Users\Ali Qaisar\.m2\repository\org\apache\xmlbeans\xmlbeans\5.2.0\xmlbeans-5.2.0.jar;C:\Users\Ali Qaisar\.m2\repository\org\apache\commons\commons-compress\1.25.0\commons-compress-1.25.0.jar;C:\Users\Ali Qaisar\.m2\repository\commons-io\commons-io\2.15.0\commons-io-2.15.0.jar;C:\Users\Ali Qaisar\.m2\repository\com\github\virtuald\curvesapi\1.08\curvesapi-1.08.jar;C:\Users\Ali Qaisar\.m2\repository\org\apache\logging\log4j\log4j-api\2.21.1\log4j-api-2.21.1.jar;C:\Users\Ali Qaisar\.m2\repository\org\apache\commons\commons-collections4\4.4\commons-collections4-4.4.jar;C:\Users\Ali Qaisar\.m2\repository\com\mysql\mysql-connector-j\8.4.0\mysql-connector-j-8.4.0.jar;C:\Users\Ali Qaisar\.m2\repository\com\google\protobuf\protobuf-java\3.25.1\protobuf-java-3.25.1.jar;C:\Users\Ali Qaisar\.m2\repository\redis\clients\jedis\5.1.4\jedis-5.1.4.jar;C:\Users\Ali Qaisar\.m2\repository\org\apache\commons\commons-pool2\2.12.0\commons-pool2-2.12.0.jar;C:\Users\Ali Qaisar\.m2\repository\org\json\json\20231013\json-20231013.jar;C:\Users\Ali Qaisar\.m2\repository\com\google\code\gson\gson\2.10.1\gson-2.10.1.jar;C:\Users\Ali Qaisar\.m2\repository\org\apache\commons\commons-lang3\3.14.0\commons-lang3-3.14.0.jar;C:\Users\Ali Qaisar\.m2\repository\org\slf4j\slf4j-api\2.0.9\slf4j-api-2.0.9.jar;C:\Users\Ali Qaisar\.m2\repository\org\slf4j\slf4j-simple\2.0.9\slf4j-simple-2.0.9.jar;C:\Users\Ali Qaisar\.m2\repository\io\github\bonigarcia\webdrivermanager\5.6.3\webdrivermanager-5.6.3.jar;C:\Users\Ali Qaisar\.m2\repository\com\github\docker-java\docker-java\3.3.4\docker-java-3.3.4.jar;C:\Users\Ali Qaisar\.m2\repository\com\github\docker-java\docker-java-core\3.3.4\docker-java-core-3.3.4.jar;C:\Users\Ali Qaisar\.m2\repository\com\github\docker-java\docker-java-api\3.3.4\docker-java-api-3.3.4.jar;C:\Users\Ali Qaisar\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.10.3\jackson-annotations-2.10.3.jar;C:\Users\Ali Qaisar\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.10.3\jackson-databind-2.10.3.jar;C:\Users\Ali Qaisar\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.10.3\jackson-core-2.10.3.jar;C:\Users\Ali Qaisar\.m2\repository\org\bouncycastle\bcpkix-jdk18on\1.76\bcpkix-jdk18on-1.76.jar;C:\Users\Ali Qaisar\.m2\repository\org\bouncycastle\bcprov-jdk18on\1.76\bcprov-jdk18on-1.76.jar;C:\Users\Ali Qaisar\.m2\repository\org\bouncycastle\bcutil-jdk18on\1.76\bcutil-jdk18on-1.76.jar;C:\Users\Ali Qaisar\.m2\repository\org\slf4j\jcl-over-slf4j\1.7.30\jcl-over-slf4j-1.7.30.jar;C:\Users\Ali Qaisar\.m2\repository\com\github\docker-java\docker-java-transport-httpclient5\3.3.4\docker-java-transport-httpclient5-3.3.4.jar;C:\Users\Ali Qaisar\.m2\repository\com\github\docker-java\docker-java-transport\3.3.4\docker-java-transport-3.3.4.jar;C:\Users\Ali Qaisar\.m2\repository\net\java\dev\jna\jna\5.13.0\jna-5.13.0.jar;C:\Users\Ali Qaisar\.m2\repository\org\brotli\dec\0.1.2\dec-0.1.2.jar;C:\Users\Ali Qaisar\.m2\repository\org\apache\httpcomponents\client5\httpclient5\5.2.1\httpclient5-5.2.1.jar;C:\Users\Ali Qaisar\.m2\repository\org\apache\httpcomponents\core5\httpcore5\5.2\httpcore5-5.2.jar;C:\Users\Ali Qaisar\.m2\repository\org\apache\httpcomponents\core5\httpcore5-h2\5.2\httpcore5-h2-5.2.jar;"/>
+    <property name="java.vm.vendor" value="Eclipse Adoptium"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://adoptium.net/"/>
+    <property name="user.timezone" value="Asia/Karachi"/>
+    <property name="os.name" value="Windows 11"/>
+    <property name="java.vm.specification.version" value="25"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Eclipse Adoptium\jdk-25.0.1.8-hotspot\bin"/>
+    <property name="sun.java.command" value="C:\Users\Ali Qaisar\AppData\Local\Temp\surefire7723531553911859780\surefirebooter-20251205000044803_3.jar C:\Users\Ali Qaisar\AppData\Local\Temp\surefire7723531553911859780 2025-12-05T00-00-44_587-jvmRun1 surefire-20251205000044803_1tmp surefire_0-20251205000044803_2tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="C:\Users\Ali Qaisar\Documents\OS\SPM\SQE_UI_Framework\target\test-classes;C:\Users\Ali Qaisar\Documents\OS\SPM\SQE_UI_Framework\target\classes;C:\Users\Ali Qaisar\.m2\repository\org\seleniumhq\selenium\selenium-java\4.23.0\selenium-java-4.23.0.jar;C:\Users\Ali Qaisar\.m2\repository\org\seleniumhq\selenium\selenium-api\4.23.0\selenium-api-4.23.0.jar;C:\Users\Ali Qaisar\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\4.23.0\selenium-chrome-driver-4.23.0.jar;C:\Users\Ali Qaisar\.m2\repository\com\google\auto\service\auto-service-annotations\1.1.1\auto-service-annotations-1.1.1.jar;C:\Users\Ali Qaisar\.m2\repository\org\seleniumhq\selenium\selenium-chromium-driver\4.23.0\selenium-chromium-driver-4.23.0.jar;C:\Users\Ali Qaisar\.m2\repository\org\seleniumhq\selenium\selenium-json\4.23.0\selenium-json-4.23.0.jar;C:\Users\Ali Qaisar\.m2\repository\org\seleniumhq\selenium\selenium-manager\4.23.0\selenium-manager-4.23.0.jar;C:\Users\Ali Qaisar\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v125\4.23.0\selenium-devtools-v125-4.23.0.jar;C:\Users\Ali Qaisar\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v126\4.23.0\selenium-devtools-v126-4.23.0.jar;C:\Users\Ali Qaisar\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v127\4.23.0\selenium-devtools-v127-4.23.0.jar;C:\Users\Ali Qaisar\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v85\4.23.0\selenium-devtools-v85-4.23.0.jar;C:\Users\Ali Qaisar\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\4.23.0\selenium-edge-driver-4.23.0.jar;C:\Users\Ali Qaisar\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\4.23.0\selenium-firefox-driver-4.23.0.jar;C:\Users\Ali Qaisar\.m2\repository\org\seleniumhq\selenium\selenium-http\4.23.0\selenium-http-4.23.0.jar;C:\Users\Ali Qaisar\.m2\repository\dev\failsafe\failsafe\3.3.2\failsafe-3.3.2.jar;C:\Users\Ali Qaisar\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\4.23.0\selenium-ie-driver-4.23.0.jar;C:\Users\Ali Qaisar\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\4.23.0\selenium-remote-driver-4.23.0.jar;C:\Users\Ali Qaisar\.m2\repository\com\google\guava\guava\33.2.1-jre\guava-33.2.1-jre.jar;C:\Users\Ali Qaisar\.m2\repository\com\google\guava\failureaccess\1.0.2\failureaccess-1.0.2.jar;C:\Users\Ali Qaisar\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\Ali Qaisar\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\Ali Qaisar\.m2\repository\org\checkerframework\checker-qual\3.42.0\checker-qual-3.42.0.jar;C:\Users\Ali Qaisar\.m2\repository\com\google\errorprone\error_prone_annotations\2.26.1\error_prone_annotations-2.26.1.jar;C:\Users\Ali Qaisar\.m2\repository\com\google\j2objc\j2objc-annotations\3.0.0\j2objc-annotations-3.0.0.jar;C:\Users\Ali Qaisar\.m2\repository\io\opentelemetry\semconv\opentelemetry-semconv\1.25.0-alpha\opentelemetry-semconv-1.25.0-alpha.jar;C:\Users\Ali Qaisar\.m2\repository\io\opentelemetry\opentelemetry-api\1.40.0\opentelemetry-api-1.40.0.jar;C:\Users\Ali Qaisar\.m2\repository\io\opentelemetry\opentelemetry-context\1.40.0\opentelemetry-context-1.40.0.jar;C:\Users\Ali Qaisar\.m2\repository\io\opentelemetry\opentelemetry-exporter-logging\1.40.0\opentelemetry-exporter-logging-1.40.0.jar;C:\Users\Ali Qaisar\.m2\repository\io\opentelemetry\opentelemetry-sdk-common\1.40.0\opentelemetry-sdk-common-1.40.0.jar;C:\Users\Ali Qaisar\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure-spi\1.40.0\opentelemetry-sdk-extension-autoconfigure-spi-1.40.0.jar;C:\Users\Ali Qaisar\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure\1.40.0\opentelemetry-sdk-extension-autoconfigure-1.40.0.jar;C:\Users\Ali Qaisar\.m2\repository\io\opentelemetry\opentelemetry-api-incubator\1.40.0-alpha\opentelemetry-api-incubator-1.40.0-alpha.jar;C:\Users\Ali Qaisar\.m2\repository\io\opentelemetry\opentelemetry-sdk-trace\1.40.0\opentelemetry-sdk-trace-1.40.0.jar;C:\Users\Ali Qaisar\.m2\repository\io\opentelemetry\opentelemetry-sdk\1.40.0\opentelemetry-sdk-1.40.0.jar;C:\Users\Ali Qaisar\.m2\repository\io\opentelemetry\opentelemetry-sdk-metrics\1.40.0\opentelemetry-sdk-metrics-1.40.0.jar;C:\Users\Ali Qaisar\.m2\repository\io\opentelemetry\opentelemetry-sdk-logs\1.40.0\opentelemetry-sdk-logs-1.40.0.jar;C:\Users\Ali Qaisar\.m2\repository\net\bytebuddy\byte-buddy\1.14.18\byte-buddy-1.14.18.jar;C:\Users\Ali Qaisar\.m2\repository\org\seleniumhq\selenium\selenium-os\4.23.0\selenium-os-4.23.0.jar;C:\Users\Ali Qaisar\.m2\repository\org\apache\commons\commons-exec\1.4.0\commons-exec-1.4.0.jar;C:\Users\Ali Qaisar\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\4.23.0\selenium-safari-driver-4.23.0.jar;C:\Users\Ali Qaisar\.m2\repository\org\seleniumhq\selenium\selenium-support\4.23.0\selenium-support-4.23.0.jar;C:\Users\Ali Qaisar\.m2\repository\io\cucumber\cucumber-java\7.18.1\cucumber-java-7.18.1.jar;C:\Users\Ali Qaisar\.m2\repository\io\cucumber\cucumber-core\7.18.1\cucumber-core-7.18.1.jar;C:\Users\Ali Qaisar\.m2\repository\io\cucumber\cucumber-gherkin\7.18.1\cucumber-gherkin-7.18.1.jar;C:\Users\Ali Qaisar\.m2\repository\io\cucumber\cucumber-gherkin-messages\7.18.1\cucumber-gherkin-messages-7.18.1.jar;C:\Users\Ali Qaisar\.m2\repository\io\cucumber\messages\24.0.0\messages-24.0.0.jar;C:\Users\Ali Qaisar\.m2\repository\io\cucumber\testng-xml-formatter\0.2.0\testng-xml-formatter-0.2.0.jar;C:\Users\Ali Qaisar\.m2\repository\io\cucumber\query\12.2.0\query-12.2.0.jar;C:\Users\Ali Qaisar\.m2\repository\io\cucumber\tag-expressions\6.1.0\tag-expressions-6.1.0.jar;C:\Users\Ali Qaisar\.m2\repository\io\cucumber\cucumber-expressions\17.1.0\cucumber-expressions-17.1.0.jar;C:\Users\Ali Qaisar\.m2\repository\io\cucumber\datatable\7.18.1\datatable-7.18.1.jar;C:\Users\Ali Qaisar\.m2\repository\io\cucumber\cucumber-plugin\7.18.1\cucumber-plugin-7.18.1.jar;C:\Users\Ali Qaisar\.m2\repository\io\cucumber\docstring\7.18.1\docstring-7.18.1.jar;C:\Users\Ali Qaisar\.m2\repository\io\cucumber\html-formatter\21.4.1\html-formatter-21.4.1.jar;C:\Users\Ali Qaisar\.m2\repository\io\cucumber\junit-xml-formatter\0.5.0\junit-xml-formatter-0.5.0.jar;C:\Users\Ali Qaisar\.m2\repository\io\cucumber\ci-environment\10.0.1\ci-environment-10.0.1.jar;C:\Users\Ali Qaisar\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\Ali Qaisar\.m2\repository\io\cucumber\cucumber-junit-platform-engine\7.18.1\cucumber-junit-platform-engine-7.18.1.jar;C:\Users\Ali Qaisar\.m2\repository\org\junit\platform\junit-platform-engine\1.10.3\junit-platform-engine-1.10.3.jar;C:\Users\Ali Qaisar\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\Ali Qaisar\.m2\repository\org\junit\jupiter\junit-jupiter\5.10.2\junit-jupiter-5.10.2.jar;C:\Users\Ali Qaisar\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.10.2\junit-jupiter-api-5.10.2.jar;C:\Users\Ali Qaisar\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.10.2\junit-jupiter-params-5.10.2.jar;C:\Users\Ali Qaisar\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.10.2\junit-jupiter-engine-5.10.2.jar;C:\Users\Ali Qaisar\.m2\repository\org\junit\platform\junit-platform-suite-api\1.10.2\junit-platform-suite-api-1.10.2.jar;C:\Users\Ali Qaisar\.m2\repository\org\junit\platform\junit-platform-commons\1.10.2\junit-platform-commons-1.10.2.jar;C:\Users\Ali Qaisar\.m2\repository\org\junit\platform\junit-platform-suite-engine\1.10.2\junit-platform-suite-engine-1.10.2.jar;C:\Users\Ali Qaisar\.m2\repository\org\junit\platform\junit-platform-suite-commons\1.10.2\junit-platform-suite-commons-1.10.2.jar;C:\Users\Ali Qaisar\.m2\repository\io\qameta\allure\allure-junit5\2.28.0\allure-junit5-2.28.0.jar;C:\Users\Ali Qaisar\.m2\repository\io\qameta\allure\allure-junit-platform\2.28.0\allure-junit-platform-2.28.0.jar;C:\Users\Ali Qaisar\.m2\repository\io\qameta\allure\allure-test-filter\2.28.0\allure-test-filter-2.28.0.jar;C:\Users\Ali Qaisar\.m2\repository\org\junit\platform\junit-platform-launcher\1.10.3\junit-platform-launcher-1.10.3.jar;C:\Users\Ali Qaisar\.m2\repository\io\qameta\allure\allure-cucumber7-jvm\2.28.0\allure-cucumber7-jvm-2.28.0.jar;C:\Users\Ali Qaisar\.m2\repository\io\qameta\allure\allure-java-commons\2.28.0\allure-java-commons-2.28.0.jar;C:\Users\Ali Qaisar\.m2\repository\io\qameta\allure\allure-model\2.28.0\allure-model-2.28.0.jar;C:\Users\Ali Qaisar\.m2\repository\io\cucumber\gherkin\26.2.0\gherkin-26.2.0.jar;C:\Users\Ali Qaisar\.m2\repository\org\apache\poi\poi-ooxml\5.2.5\poi-ooxml-5.2.5.jar;C:\Users\Ali Qaisar\.m2\repository\org\apache\poi\poi\5.2.5\poi-5.2.5.jar;C:\Users\Ali Qaisar\.m2\repository\commons-codec\commons-codec\1.16.0\commons-codec-1.16.0.jar;C:\Users\Ali Qaisar\.m2\repository\org\apache\commons\commons-math3\3.6.1\commons-math3-3.6.1.jar;C:\Users\Ali Qaisar\.m2\repository\com\zaxxer\SparseBitSet\1.3\SparseBitSet-1.3.jar;C:\Users\Ali Qaisar\.m2\repository\org\apache\poi\poi-ooxml-lite\5.2.5\poi-ooxml-lite-5.2.5.jar;C:\Users\Ali Qaisar\.m2\repository\org\apache\xmlbeans\xmlbeans\5.2.0\xmlbeans-5.2.0.jar;C:\Users\Ali Qaisar\.m2\repository\org\apache\commons\commons-compress\1.25.0\commons-compress-1.25.0.jar;C:\Users\Ali Qaisar\.m2\repository\commons-io\commons-io\2.15.0\commons-io-2.15.0.jar;C:\Users\Ali Qaisar\.m2\repository\com\github\virtuald\curvesapi\1.08\curvesapi-1.08.jar;C:\Users\Ali Qaisar\.m2\repository\org\apache\logging\log4j\log4j-api\2.21.1\log4j-api-2.21.1.jar;C:\Users\Ali Qaisar\.m2\repository\org\apache\commons\commons-collections4\4.4\commons-collections4-4.4.jar;C:\Users\Ali Qaisar\.m2\repository\com\mysql\mysql-connector-j\8.4.0\mysql-connector-j-8.4.0.jar;C:\Users\Ali Qaisar\.m2\repository\com\google\protobuf\protobuf-java\3.25.1\protobuf-java-3.25.1.jar;C:\Users\Ali Qaisar\.m2\repository\redis\clients\jedis\5.1.4\jedis-5.1.4.jar;C:\Users\Ali Qaisar\.m2\repository\org\apache\commons\commons-pool2\2.12.0\commons-pool2-2.12.0.jar;C:\Users\Ali Qaisar\.m2\repository\org\json\json\20231013\json-20231013.jar;C:\Users\Ali Qaisar\.m2\repository\com\google\code\gson\gson\2.10.1\gson-2.10.1.jar;C:\Users\Ali Qaisar\.m2\repository\org\apache\commons\commons-lang3\3.14.0\commons-lang3-3.14.0.jar;C:\Users\Ali Qaisar\.m2\repository\org\slf4j\slf4j-api\2.0.9\slf4j-api-2.0.9.jar;C:\Users\Ali Qaisar\.m2\repository\org\slf4j\slf4j-simple\2.0.9\slf4j-simple-2.0.9.jar;C:\Users\Ali Qaisar\.m2\repository\io\github\bonigarcia\webdrivermanager\5.6.3\webdrivermanager-5.6.3.jar;C:\Users\Ali Qaisar\.m2\repository\com\github\docker-java\docker-java\3.3.4\docker-java-3.3.4.jar;C:\Users\Ali Qaisar\.m2\repository\com\github\docker-java\docker-java-core\3.3.4\docker-java-core-3.3.4.jar;C:\Users\Ali Qaisar\.m2\repository\com\github\docker-java\docker-java-api\3.3.4\docker-java-api-3.3.4.jar;C:\Users\Ali Qaisar\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.10.3\jackson-annotations-2.10.3.jar;C:\Users\Ali Qaisar\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.10.3\jackson-databind-2.10.3.jar;C:\Users\Ali Qaisar\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.10.3\jackson-core-2.10.3.jar;C:\Users\Ali Qaisar\.m2\repository\org\bouncycastle\bcpkix-jdk18on\1.76\bcpkix-jdk18on-1.76.jar;C:\Users\Ali Qaisar\.m2\repository\org\bouncycastle\bcprov-jdk18on\1.76\bcprov-jdk18on-1.76.jar;C:\Users\Ali Qaisar\.m2\repository\org\bouncycastle\bcutil-jdk18on\1.76\bcutil-jdk18on-1.76.jar;C:\Users\Ali Qaisar\.m2\repository\org\slf4j\jcl-over-slf4j\1.7.30\jcl-over-slf4j-1.7.30.jar;C:\Users\Ali Qaisar\.m2\repository\com\github\docker-java\docker-java-transport-httpclient5\3.3.4\docker-java-transport-httpclient5-3.3.4.jar;C:\Users\Ali Qaisar\.m2\repository\com\github\docker-java\docker-java-transport\3.3.4\docker-java-transport-3.3.4.jar;C:\Users\Ali Qaisar\.m2\repository\net\java\dev\jna\jna\5.13.0\jna-5.13.0.jar;C:\Users\Ali Qaisar\.m2\repository\org\brotli\dec\0.1.2\dec-0.1.2.jar;C:\Users\Ali Qaisar\.m2\repository\org\apache\httpcomponents\client5\httpclient5\5.2.1\httpclient5-5.2.1.jar;C:\Users\Ali Qaisar\.m2\repository\org\apache\httpcomponents\core5\httpcore5\5.2\httpcore5-5.2.jar;C:\Users\Ali Qaisar\.m2\repository\org\apache\httpcomponents\core5\httpcore5-h2\5.2\httpcore5-h2-5.2.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\Ali Qaisar"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2025-10-21"/>
+    <property name="cucumber.execution.dry-run" value="false"/>
+    <property name="java.home" value="C:\Program Files\Eclipse Adoptium\jdk-25.0.1.8-hotspot"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="C:\Users\Ali Qaisar\Documents\OS\SPM\SQE_UI_Framework"/>
+    <property name="java.vm.compressedOopsMode" value="32-bit"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="surefire.real.class.path" value="C:\Users\Ali Qaisar\AppData\Local\Temp\surefire7723531553911859780\surefirebooter-20251205000044803_3.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="25.0.1+8-LTS"/>
+    <property name="user.name" value="Ali Qaisar"/>
+    <property name="stdout.encoding" value="Cp1252"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="java.vendor.version" value="Temurin-25.0.1+8"/>
+    <property name="localRepository" value="C:\Users\Ali Qaisar\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://github.com/adoptium/adoptium-support/issues"/>
+    <property name="java.io.tmpdir" value="C:\Users\ALIQAI~1\AppData\Local\Temp\"/>
+    <property name="java.version" value="25.0.1"/>
+    <property name="user.dir" value="C:\Users\Ali Qaisar\Documents\OS\SPM\SQE_UI_Framework"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="native.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\Eclipse Adoptium\jdk-25.0.1.8-hotspot\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;c:\Users\Ali Qaisar\AppData\Roaming\Code\User\globalStorage\github.copilot-chat\copilotCli;c:\Users\Ali Qaisar\AppData\Roaming\Code\User\globalStorage\github.copilot-chat\debugCommand;C:\Program Files\Eclipse Adoptium\jdk-25.0.1.8-hotspot\bin;C:\Program Files\Python313\Scripts\;C:\Program Files\Python313\;C:\Program Files (x86)\VMware\VMware Player\bin\;C:\Program Files\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Cloudflare\Cloudflare WARP\;c:\Users\Ali Qaisar\AppData\Local\Programs\cursor\resources\app\bin;C:\Program Files\dotnet\;C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit\;C:\ProgramData\chocolatey\bin;C:\Program Files\Git\cmd;%JAVA_HOME%\bin;C:\Users\Ali Qaisar\Documents\OS\SPM\SQE_UI_Framework\apache-maven-3.9.11\bin;C:\Users\Ali Qaisar\Documents\OS\SPM\SQE_UI_Framework\apache-maven-3.9.11\bin;C:\apache-maven-3.9.11\bin;C:\WebDrivers\;C:\Users\Ali Qaisar\AppData\Local\Programs\Python\Launcher\;C:\Users\Ali Qaisar\AppData\Local\Microsoft\WindowsApps;C:\Users\Ali Qaisar\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Ali Qaisar\AppData\Local\Programs\cursor\resources\app\bin;C:\Users\Ali Qaisar\.dotnet\tools;C:\Program Files\JetBrains\IntelliJ IDEA 2025.2.5\bin;C:\Users\Ali Qaisar\AppData\Local\Programs\Antigravity\bin;c:\Users\Ali Qaisar\.vscode\extensions\vscjava.vscode-java-debug-0.58.3\bundled\scripts\noConfigScripts;."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="stderr.encoding" value="Cp1252"/>
+    <property name="java.vendor" value="Eclipse Adoptium"/>
+    <property name="java.vm.version" value="25.0.1+8-LTS"/>
+    <property name="stdin.encoding" value="Cp1252"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="69.0"/>
+  </properties>
+  <testcase name="Fill checkout form" classname="Checkout Process" time="69.985">
+    <error message="no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;*[name=&apos;name_on_card&apos;]&quot;}&#10;  (Session info: chrome=143.0.7499.40)&#10;For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception&#10;Build info: version: &apos;4.23.0&apos;, revision: &apos;4df0a231af&apos;&#10;System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;25.0.1&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [3579a1b76ef1827898e97177323ebd8a, findElement {value=name_on_card, using=name}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 143.0.7499.40, chrome: {chromedriverVersion: 143.0.7499.40 (c23ff452476d..., userDataDir: C:\Users\ALIQAI~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:6649}, goog:processID: 16952, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:6649/devtool..., se:cdpVersion: 143.0.7499.40, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 3579a1b76ef1827898e97177323ebd8a" type="org.openqa.selenium.NoSuchElementException"><![CDATA[org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"css selector","selector":"*[name='name_on_card']"}
+  (Session info: chrome=143.0.7499.40)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.23.0', revision: '4df0a231af'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '25.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [3579a1b76ef1827898e97177323ebd8a, findElement {value=name_on_card, using=name}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 143.0.7499.40, chrome: {chromedriverVersion: 143.0.7499.40 (c23ff452476d..., userDataDir: C:\Users\ALIQAI~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:6649}, goog:processID: 16952, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:6649/devtool..., se:cdpVersion: 143.0.7499.40, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 3579a1b76ef1827898e97177323ebd8a
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:527)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:66)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:351)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy25.sendKeys(Unknown Source)
+	at com.nuces.sqe.framework.pages.CheckoutPage.enterPaymentDetails(CheckoutPage.java:46)
+	at com.nuces.sqe.framework.steps.FormSteps.i_enter_payment_details(FormSteps.java:63)
+	at ✽.I enter payment details "John Doe", "1234567812345678", "123", "01", "2025"(classpath:features/checkout.feature:10)
+]]></error>
+    <system-out><![CDATA[
+Scenario: Fill checkout form                                                      &amp#27;[90m# features/checkout.feature:8&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mI am logged in with &amp#27;[0m&amp#27;[32m&amp#27;[1m"test_user@example.com"&amp#27;[0m&amp#27;[32m and &amp#27;[0m&amp#27;[32m&amp#27;[1m"password123"&amp#27;[0m             &amp#27;[90m# com.nuces.sqe.framework.steps.LoginSteps.i_am_logged_in_with(java.lang.String,java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mI have added a product to the cart&amp#27;[0m                                          &amp#27;[90m# com.nuces.sqe.framework.steps.ProductSteps.i_have_added_a_product_to_the_cart()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mI am on the cart page&amp#27;[0m                                                       &amp#27;[90m# com.nuces.sqe.framework.steps.FormSteps.i_am_on_the_cart_page()&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mI proceed to checkout&amp#27;[0m                                                      &amp#27;[90m# com.nuces.sqe.framework.steps.FormSteps.i_proceed_to_checkout()&amp#27;[0m
+  &amp#27;[31mAnd &amp#27;[0m&amp#27;[31mI enter payment details &amp#27;[0m&amp#27;[31m&amp#27;[1m"John Doe"&amp#27;[0m&amp#27;[31m, &amp#27;[0m&amp#27;[31m&amp#27;[1m"1234567812345678"&amp#27;[0m&amp#27;[31m, &amp#27;[0m&amp#27;[31m&amp#27;[1m"123"&amp#27;[0m&amp#27;[31m, &amp#27;[0m&amp#27;[31m&amp#27;[1m"01"&amp#27;[0m&amp#27;[31m, &amp#27;[0m&amp#27;[31m&amp#27;[1m"2025"&amp#27;[0m &amp#27;[90m# com.nuces.sqe.framework.steps.FormSteps.i_enter_payment_details(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)&amp#27;[0m
+      &amp#27;[31morg.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"*[name='name_on_card']"}
+  (Session info: chrome=143.0.7499.40)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.23.0', revision: '4df0a231af'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '25.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [3579a1b76ef1827898e97177323ebd8a, findElement {value=name_on_card, using=name}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 143.0.7499.40, chrome: {chromedriverVersion: 143.0.7499.40 (c23ff452476d..., userDataDir: C:\Users\ALIQAI~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:6649}, goog:processID: 16952, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:6649/devtool..., se:cdpVersion: 143.0.7499.40, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 3579a1b76ef1827898e97177323ebd8a
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:527)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:66)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:351)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy25.sendKeys(Unknown Source)
+	at com.nuces.sqe.framework.pages.CheckoutPage.enterPaymentDetails(CheckoutPage.java:46)
+	at com.nuces.sqe.framework.steps.FormSteps.i_enter_payment_details(FormSteps.java:63)
+	at ✽.I enter payment details "John Doe", "1234567812345678", "123", "01", "2025"(classpath:features/checkout.feature:10)
+&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mI confirm the order&amp#27;[0m                                                         &amp#27;[90m# com.nuces.sqe.framework.steps.FormSteps.i_confirm_the_order()&amp#27;[0m
+  &amp#27;[36mThen &amp#27;[0m&amp#27;[36mthe order should be placed successfully&amp#27;[0m                                    &amp#27;[90m# com.nuces.sqe.framework.steps.FormSteps.the_order_should_be_placed_successfully()&amp#27;[0m
+]]></system-out>
+    <system-err><![CDATA[[main] INFO io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 143.0.7499.40 (resolved driver for Chrome 143)
+[main] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\Ali Qaisar\.cache\selenium\chromedriver\win64\143.0.7499.40\chromedriver.exe
+Dec 05, 2025 12:00:51 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 143
+Dec 05, 2025 12:00:51 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 143.0.7499.40. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.23.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="Apply wrong payment data" classname="Checkout Process" time="22.025">
+    <error message="no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;*[name=&apos;name_on_card&apos;]&quot;}&#10;  (Session info: chrome=143.0.7499.40)&#10;For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception&#10;Build info: version: &apos;4.23.0&apos;, revision: &apos;4df0a231af&apos;&#10;System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;25.0.1&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [8820f60200dde87b975d6137e669a68e, findElement {value=name_on_card, using=name}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 143.0.7499.40, chrome: {chromedriverVersion: 143.0.7499.40 (c23ff452476d..., userDataDir: C:\Users\ALIQAI~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:1214}, goog:processID: 23012, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:1214/devtool..., se:cdpVersion: 143.0.7499.40, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 8820f60200dde87b975d6137e669a68e" type="org.openqa.selenium.NoSuchElementException"><![CDATA[org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"css selector","selector":"*[name='name_on_card']"}
+  (Session info: chrome=143.0.7499.40)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.23.0', revision: '4df0a231af'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '25.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [8820f60200dde87b975d6137e669a68e, findElement {value=name_on_card, using=name}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 143.0.7499.40, chrome: {chromedriverVersion: 143.0.7499.40 (c23ff452476d..., userDataDir: C:\Users\ALIQAI~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:1214}, goog:processID: 23012, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:1214/devtool..., se:cdpVersion: 143.0.7499.40, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 8820f60200dde87b975d6137e669a68e
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:527)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:66)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:351)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy25.sendKeys(Unknown Source)
+	at com.nuces.sqe.framework.pages.CheckoutPage.enterPaymentDetails(CheckoutPage.java:46)
+	at com.nuces.sqe.framework.steps.FormSteps.i_enter_payment_details(FormSteps.java:63)
+	at ✽.I enter payment details "John Doe", "123", "123", "01", "2025"(classpath:features/checkout.feature:16)
+]]></error>
+    <system-out><![CDATA[
+Scenario: Apply wrong payment data                                    &amp#27;[90m# features/checkout.feature:14&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mI am logged in with &amp#27;[0m&amp#27;[32m&amp#27;[1m"test_user@example.com"&amp#27;[0m&amp#27;[32m and &amp#27;[0m&amp#27;[32m&amp#27;[1m"password123"&amp#27;[0m &amp#27;[90m# com.nuces.sqe.framework.steps.LoginSteps.i_am_logged_in_with(java.lang.String,java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mI have added a product to the cart&amp#27;[0m                              &amp#27;[90m# com.nuces.sqe.framework.steps.ProductSteps.i_have_added_a_product_to_the_cart()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mI am on the cart page&amp#27;[0m                                           &amp#27;[90m# com.nuces.sqe.framework.steps.FormSteps.i_am_on_the_cart_page()&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mI proceed to checkout&amp#27;[0m                                          &amp#27;[90m# com.nuces.sqe.framework.steps.FormSteps.i_proceed_to_checkout()&amp#27;[0m
+  &amp#27;[31mAnd &amp#27;[0m&amp#27;[31mI enter payment details &amp#27;[0m&amp#27;[31m&amp#27;[1m"John Doe"&amp#27;[0m&amp#27;[31m, &amp#27;[0m&amp#27;[31m&amp#27;[1m"123"&amp#27;[0m&amp#27;[31m, &amp#27;[0m&amp#27;[31m&amp#27;[1m"123"&amp#27;[0m&amp#27;[31m, &amp#27;[0m&amp#27;[31m&amp#27;[1m"01"&amp#27;[0m&amp#27;[31m, &amp#27;[0m&amp#27;[31m&amp#27;[1m"2025"&amp#27;[0m  &amp#27;[90m# com.nuces.sqe.framework.steps.FormSteps.i_enter_payment_details(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)&amp#27;[0m
+      &amp#27;[31morg.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"*[name='name_on_card']"}
+  (Session info: chrome=143.0.7499.40)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.23.0', revision: '4df0a231af'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '25.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [8820f60200dde87b975d6137e669a68e, findElement {value=name_on_card, using=name}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 143.0.7499.40, chrome: {chromedriverVersion: 143.0.7499.40 (c23ff452476d..., userDataDir: C:\Users\ALIQAI~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:1214}, goog:processID: 23012, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:1214/devtool..., se:cdpVersion: 143.0.7499.40, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 8820f60200dde87b975d6137e669a68e
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:527)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:66)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:351)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy25.sendKeys(Unknown Source)
+	at com.nuces.sqe.framework.pages.CheckoutPage.enterPaymentDetails(CheckoutPage.java:46)
+	at com.nuces.sqe.framework.steps.FormSteps.i_enter_payment_details(FormSteps.java:63)
+	at ✽.I enter payment details "John Doe", "123", "123", "01", "2025"(classpath:features/checkout.feature:16)
+&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mI confirm the order&amp#27;[0m                                             &amp#27;[90m# com.nuces.sqe.framework.steps.FormSteps.i_confirm_the_order()&amp#27;[0m
+  &amp#27;[36mThen &amp#27;[0m&amp#27;[36mI should see a payment error&amp#27;[0m                                   &amp#27;[90m# com.nuces.sqe.framework.steps.FormSteps.i_should_see_a_payment_error()&amp#27;[0m
+]]></system-out>
+    <system-err><![CDATA[[main] INFO io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 143.0.7499.40 (resolved driver for Chrome 143)
+[main] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\Ali Qaisar\.cache\selenium\chromedriver\win64\143.0.7499.40\chromedriver.exe
+Dec 05, 2025 12:01:59 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 143
+Dec 05, 2025 12:01:59 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 143.0.7499.40. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.23.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="Successful order placement" classname="Checkout Process" time="21.018">
+    <error message="no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;*[name=&apos;name_on_card&apos;]&quot;}&#10;  (Session info: chrome=143.0.7499.40)&#10;For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception&#10;Build info: version: &apos;4.23.0&apos;, revision: &apos;4df0a231af&apos;&#10;System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;25.0.1&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [41acb28deac104930f81d23578d51dfe, findElement {value=name_on_card, using=name}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 143.0.7499.40, chrome: {chromedriverVersion: 143.0.7499.40 (c23ff452476d..., userDataDir: C:\Users\ALIQAI~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:6200}, goog:processID: 2284, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:6200/devtool..., se:cdpVersion: 143.0.7499.40, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 41acb28deac104930f81d23578d51dfe" type="org.openqa.selenium.NoSuchElementException"><![CDATA[org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"css selector","selector":"*[name='name_on_card']"}
+  (Session info: chrome=143.0.7499.40)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.23.0', revision: '4df0a231af'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '25.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [41acb28deac104930f81d23578d51dfe, findElement {value=name_on_card, using=name}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 143.0.7499.40, chrome: {chromedriverVersion: 143.0.7499.40 (c23ff452476d..., userDataDir: C:\Users\ALIQAI~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:6200}, goog:processID: 2284, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:6200/devtool..., se:cdpVersion: 143.0.7499.40, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 41acb28deac104930f81d23578d51dfe
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:527)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:66)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:351)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy25.sendKeys(Unknown Source)
+	at com.nuces.sqe.framework.pages.CheckoutPage.enterPaymentDetails(CheckoutPage.java:46)
+	at com.nuces.sqe.framework.steps.FormSteps.i_enter_valid_payment_details(FormSteps.java:68)
+	at ✽.I enter valid payment details(classpath:features/checkout.feature:22)
+]]></error>
+    <system-out><![CDATA[
+Scenario: Successful order placement                                  &amp#27;[90m# features/checkout.feature:20&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mI am logged in with &amp#27;[0m&amp#27;[32m&amp#27;[1m"test_user@example.com"&amp#27;[0m&amp#27;[32m and &amp#27;[0m&amp#27;[32m&amp#27;[1m"password123"&amp#27;[0m &amp#27;[90m# com.nuces.sqe.framework.steps.LoginSteps.i_am_logged_in_with(java.lang.String,java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mI have added a product to the cart&amp#27;[0m                              &amp#27;[90m# com.nuces.sqe.framework.steps.ProductSteps.i_have_added_a_product_to_the_cart()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mI am on the cart page&amp#27;[0m                                           &amp#27;[90m# com.nuces.sqe.framework.steps.FormSteps.i_am_on_the_cart_page()&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mI proceed to checkout&amp#27;[0m                                          &amp#27;[90m# com.nuces.sqe.framework.steps.FormSteps.i_proceed_to_checkout()&amp#27;[0m
+  &amp#27;[31mAnd &amp#27;[0m&amp#27;[31mI enter valid payment details&amp#27;[0m                                   &amp#27;[90m# com.nuces.sqe.framework.steps.FormSteps.i_enter_valid_payment_details()&amp#27;[0m
+      &amp#27;[31morg.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"*[name='name_on_card']"}
+  (Session info: chrome=143.0.7499.40)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.23.0', revision: '4df0a231af'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '25.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [41acb28deac104930f81d23578d51dfe, findElement {value=name_on_card, using=name}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 143.0.7499.40, chrome: {chromedriverVersion: 143.0.7499.40 (c23ff452476d..., userDataDir: C:\Users\ALIQAI~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:6200}, goog:processID: 2284, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:6200/devtool..., se:cdpVersion: 143.0.7499.40, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 41acb28deac104930f81d23578d51dfe
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:527)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:66)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:351)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy25.sendKeys(Unknown Source)
+	at com.nuces.sqe.framework.pages.CheckoutPage.enterPaymentDetails(CheckoutPage.java:46)
+	at com.nuces.sqe.framework.steps.FormSteps.i_enter_valid_payment_details(FormSteps.java:68)
+	at ✽.I enter valid payment details(classpath:features/checkout.feature:22)
+&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mI confirm the order&amp#27;[0m                                             &amp#27;[90m# com.nuces.sqe.framework.steps.FormSteps.i_confirm_the_order()&amp#27;[0m
+  &amp#27;[36mThen &amp#27;[0m&amp#27;[36mthe order should be placed successfully&amp#27;[0m                        &amp#27;[90m# com.nuces.sqe.framework.steps.FormSteps.the_order_should_be_placed_successfully()&amp#27;[0m
+]]></system-out>
+    <system-err><![CDATA[[main] INFO io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 143.0.7499.40 (resolved driver for Chrome 143)
+[main] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\Ali Qaisar\.cache\selenium\chromedriver\win64\143.0.7499.40\chromedriver.exe
+Dec 05, 2025 12:02:21 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 143
+Dec 05, 2025 12:02:21 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 143.0.7499.40. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.23.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="Fill contact form" classname="Form Submission" time="12.52">
+    <system-out><![CDATA[
+Scenario: Fill contact form                                                               &amp#27;[90m# features/form.feature:6&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mI am on the contact page&amp#27;[0m                                                          &amp#27;[90m# com.nuces.sqe.framework.steps.FormSteps.i_am_on_the_contact_page()&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mI fill the contact form with &amp#27;[0m&amp#27;[32m&amp#27;[1m"Test User"&amp#27;[0m&amp#27;[32m, &amp#27;[0m&amp#27;[32m&amp#27;[1m"test@example.com"&amp#27;[0m&amp#27;[32m, &amp#27;[0m&amp#27;[32m&amp#27;[1m"Subject"&amp#27;[0m&amp#27;[32m, &amp#27;[0m&amp#27;[32m&amp#27;[1m"Message"&amp#27;[0m &amp#27;[90m# com.nuces.sqe.framework.steps.FormSteps.i_fill_the_contact_form_with(java.lang.String,java.lang.String,java.lang.String,java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mI submit the form&amp#27;[0m                                                                   &amp#27;[90m# com.nuces.sqe.framework.steps.FormSteps.i_submit_the_form()&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mI should see a success message&amp#27;[0m                                                     &amp#27;[90m# com.nuces.sqe.framework.steps.FormSteps.i_should_see_a_success_message()&amp#27;[0m
+]]></system-out>
+    <system-err><![CDATA[[main] INFO io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 143.0.7499.40 (resolved driver for Chrome 143)
+[main] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\Ali Qaisar\.cache\selenium\chromedriver\win64\143.0.7499.40\chromedriver.exe
+Dec 05, 2025 12:02:42 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 143
+Dec 05, 2025 12:02:42 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 143.0.7499.40. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.23.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="Submit invalid data" classname="Form Submission" time="9.385">
+    <system-out><![CDATA[
+Scenario: Submit invalid data                      &amp#27;[90m# features/form.feature:11&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mI am on the contact page&amp#27;[0m                   &amp#27;[90m# com.nuces.sqe.framework.steps.FormSteps.i_am_on_the_contact_page()&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mI fill the contact form with &amp#27;[0m&amp#27;[32m&amp#27;[1m""&amp#27;[0m&amp#27;[32m, &amp#27;[0m&amp#27;[32m&amp#27;[1m""&amp#27;[0m&amp#27;[32m, &amp#27;[0m&amp#27;[32m&amp#27;[1m""&amp#27;[0m&amp#27;[32m, &amp#27;[0m&amp#27;[32m&amp#27;[1m""&amp#27;[0m &amp#27;[90m# com.nuces.sqe.framework.steps.FormSteps.i_fill_the_contact_form_with(java.lang.String,java.lang.String,java.lang.String,java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mI submit the form&amp#27;[0m                            &amp#27;[90m# com.nuces.sqe.framework.steps.FormSteps.i_submit_the_form()&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mI should see validation errors&amp#27;[0m              &amp#27;[90m# com.nuces.sqe.framework.steps.FormSteps.i_should_see_validation_errors()&amp#27;[0m
+]]></system-out>
+    <system-err><![CDATA[[main] INFO io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 143.0.7499.40 (resolved driver for Chrome 143)
+[main] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\Ali Qaisar\.cache\selenium\chromedriver\win64\143.0.7499.40\chromedriver.exe
+Dec 05, 2025 12:02:55 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 143
+Dec 05, 2025 12:02:55 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 143.0.7499.40. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.23.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="Login with valid credentials" classname="Login Functionality" time="12.282">
+    <failure message="Logout button should be visible ==&gt; expected: &lt;true&gt; but was: &lt;false&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: Logout button should be visible ==> expected: <true> but was: <false>
+	at com.nuces.sqe.framework.steps.LoginSteps.i_should_be_logged_in_successfully(LoginSteps.java:39)
+	at ✽.I should be logged in successfully(classpath:features/login.feature:9)
+]]></failure>
+    <system-out><![CDATA[
+Scenario: Login with valid credentials                                     &amp#27;[90m# features/login.feature:6&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mI am on the login page&amp#27;[0m                                             &amp#27;[90m# com.nuces.sqe.framework.steps.LoginSteps.i_am_on_the_login_page()&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mI enter username &amp#27;[0m&amp#27;[32m&amp#27;[1m"test_user@example.com"&amp#27;[0m&amp#27;[32m and password &amp#27;[0m&amp#27;[32m&amp#27;[1m"password123"&amp#27;[0m &amp#27;[90m# com.nuces.sqe.framework.steps.LoginSteps.i_enter_username_and_password(java.lang.String,java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mI click the login button&amp#27;[0m                                             &amp#27;[90m# com.nuces.sqe.framework.steps.LoginSteps.i_click_the_login_button()&amp#27;[0m
+  &amp#27;[31mThen &amp#27;[0m&amp#27;[31mI should be logged in successfully&amp#27;[0m                                  &amp#27;[90m# com.nuces.sqe.framework.steps.LoginSteps.i_should_be_logged_in_successfully()&amp#27;[0m
+      &amp#27;[31morg.opentest4j.AssertionFailedError: Logout button should be visible ==> expected: <true> but was: <false>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertTrue.failNotTrue(AssertTrue.java:63)
+	at org.junit.jupiter.api.AssertTrue.assertTrue(AssertTrue.java:36)
+	at org.junit.jupiter.api.Assertions.assertTrue(Assertions.java:214)
+	at com.nuces.sqe.framework.steps.LoginSteps.i_should_be_logged_in_successfully(LoginSteps.java:39)
+	at ✽.I should be logged in successfully(classpath:features/login.feature:9)
+&amp#27;[0m
+]]></system-out>
+    <system-err><![CDATA[[main] INFO io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 143.0.7499.40 (resolved driver for Chrome 143)
+[main] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\Ali Qaisar\.cache\selenium\chromedriver\win64\143.0.7499.40\chromedriver.exe
+Dec 05, 2025 12:03:04 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 143
+Dec 05, 2025 12:03:04 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 143.0.7499.40. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.23.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="Login with invalid credentials" classname="Login Functionality" time="11.112">
+    <system-out><![CDATA[
+Scenario: Login with invalid credentials                           &amp#27;[90m# features/login.feature:11&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mI am on the login page&amp#27;[0m                                     &amp#27;[90m# com.nuces.sqe.framework.steps.LoginSteps.i_am_on_the_login_page()&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mI enter username &amp#27;[0m&amp#27;[32m&amp#27;[1m"invalid@example.com"&amp#27;[0m&amp#27;[32m and password &amp#27;[0m&amp#27;[32m&amp#27;[1m"wrong"&amp#27;[0m &amp#27;[90m# com.nuces.sqe.framework.steps.LoginSteps.i_enter_username_and_password(java.lang.String,java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mI click the login button&amp#27;[0m                                     &amp#27;[90m# com.nuces.sqe.framework.steps.LoginSteps.i_click_the_login_button()&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mI should see an error message&amp#27;[0m                               &amp#27;[90m# com.nuces.sqe.framework.steps.LoginSteps.i_should_see_an_error_message()&amp#27;[0m
+]]></system-out>
+    <system-err><![CDATA[[main] INFO io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 143.0.7499.40 (resolved driver for Chrome 143)
+[main] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\Ali Qaisar\.cache\selenium\chromedriver\win64\143.0.7499.40\chromedriver.exe
+Dec 05, 2025 12:03:17 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 143
+Dec 05, 2025 12:03:17 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 143.0.7499.40. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.23.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="Login with empty fields" classname="Login Functionality" time="8.836">
+    <system-out><![CDATA[
+Scenario: Login with empty fields          &amp#27;[90m# features/login.feature:16&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mI am on the login page&amp#27;[0m             &amp#27;[90m# com.nuces.sqe.framework.steps.LoginSteps.i_am_on_the_login_page()&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mI enter username &amp#27;[0m&amp#27;[32m&amp#27;[1m""&amp#27;[0m&amp#27;[32m and password &amp#27;[0m&amp#27;[32m&amp#27;[1m""&amp#27;[0m &amp#27;[90m# com.nuces.sqe.framework.steps.LoginSteps.i_enter_username_and_password(java.lang.String,java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mI click the login button&amp#27;[0m             &amp#27;[90m# com.nuces.sqe.framework.steps.LoginSteps.i_click_the_login_button()&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mI should remain on the login page&amp#27;[0m   &amp#27;[90m# com.nuces.sqe.framework.steps.LoginSteps.i_should_remain_on_the_login_page()&amp#27;[0m
+]]></system-out>
+    <system-err><![CDATA[[main] INFO io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 143.0.7499.40 (resolved driver for Chrome 143)
+[main] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\Ali Qaisar\.cache\selenium\chromedriver\win64\143.0.7499.40\chromedriver.exe
+Dec 05, 2025 12:03:28 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 143
+Dec 05, 2025 12:03:28 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 143.0.7499.40. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.23.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="Logout test" classname="Login Functionality" time="15.367">
+    <error message="no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;a[href=&apos;/logout&apos;]&quot;}&#10;  (Session info: chrome=143.0.7499.40)&#10;For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception&#10;Build info: version: &apos;4.23.0&apos;, revision: &apos;4df0a231af&apos;&#10;System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;25.0.1&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [84a6b62d4cfbb54766f76e1de7fd28b7, findElement {value=a[href=&apos;/logout&apos;], using=css selector}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 143.0.7499.40, chrome: {chromedriverVersion: 143.0.7499.40 (c23ff452476d..., userDataDir: C:\Users\ALIQAI~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:8429}, goog:processID: 3168, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:8429/devtool..., se:cdpVersion: 143.0.7499.40, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 84a6b62d4cfbb54766f76e1de7fd28b7" type="org.openqa.selenium.NoSuchElementException"><![CDATA[org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"css selector","selector":"a[href='/logout']"}
+  (Session info: chrome=143.0.7499.40)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.23.0', revision: '4df0a231af'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '25.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [84a6b62d4cfbb54766f76e1de7fd28b7, findElement {value=a[href='/logout'], using=css selector}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 143.0.7499.40, chrome: {chromedriverVersion: 143.0.7499.40 (c23ff452476d..., userDataDir: C:\Users\ALIQAI~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:8429}, goog:processID: 3168, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:8429/devtool..., se:cdpVersion: 143.0.7499.40, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 84a6b62d4cfbb54766f76e1de7fd28b7
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:527)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:351)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy25.click(Unknown Source)
+	at com.nuces.sqe.framework.pages.LoginPage.logout(LoginPage.java:43)
+	at com.nuces.sqe.framework.steps.LoginSteps.i_click_the_logout_button(LoginSteps.java:64)
+	at ✽.I click the logout button(classpath:features/login.feature:23)
+]]></error>
+    <system-out><![CDATA[
+Scenario: Logout test                                                 &amp#27;[90m# features/login.feature:21&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mI am on the login page&amp#27;[0m                                        &amp#27;[90m# com.nuces.sqe.framework.steps.LoginSteps.i_am_on_the_login_page()&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mI am logged in with &amp#27;[0m&amp#27;[32m&amp#27;[1m"test_user@example.com"&amp#27;[0m&amp#27;[32m and &amp#27;[0m&amp#27;[32m&amp#27;[1m"password123"&amp#27;[0m &amp#27;[90m# com.nuces.sqe.framework.steps.LoginSteps.i_am_logged_in_with(java.lang.String,java.lang.String)&amp#27;[0m
+  &amp#27;[31mWhen &amp#27;[0m&amp#27;[31mI click the logout button&amp#27;[0m                                      &amp#27;[90m# com.nuces.sqe.framework.steps.LoginSteps.i_click_the_logout_button()&amp#27;[0m
+      &amp#27;[31morg.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"a[href='/logout']"}
+  (Session info: chrome=143.0.7499.40)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.23.0', revision: '4df0a231af'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '25.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [84a6b62d4cfbb54766f76e1de7fd28b7, findElement {value=a[href='/logout'], using=css selector}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 143.0.7499.40, chrome: {chromedriverVersion: 143.0.7499.40 (c23ff452476d..., userDataDir: C:\Users\ALIQAI~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:8429}, goog:processID: 3168, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:8429/devtool..., se:cdpVersion: 143.0.7499.40, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 84a6b62d4cfbb54766f76e1de7fd28b7
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:527)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:351)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy25.click(Unknown Source)
+	at com.nuces.sqe.framework.pages.LoginPage.logout(LoginPage.java:43)
+	at com.nuces.sqe.framework.steps.LoginSteps.i_click_the_logout_button(LoginSteps.java:64)
+	at ✽.I click the logout button(classpath:features/login.feature:23)
+&amp#27;[0m
+  &amp#27;[36mThen &amp#27;[0m&amp#27;[36mI should be redirected to the login page&amp#27;[0m                       &amp#27;[90m# com.nuces.sqe.framework.steps.LoginSteps.i_should_be_redirected_to_the_login_page()&amp#27;[0m
+]]></system-out>
+    <system-err><![CDATA[[main] INFO io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 143.0.7499.40 (resolved driver for Chrome 143)
+[main] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\Ali Qaisar\.cache\selenium\chromedriver\win64\143.0.7499.40\chromedriver.exe
+Dec 05, 2025 12:03:37 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 143
+Dec 05, 2025 12:03:37 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 143.0.7499.40. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.23.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="Search for a product" classname="Product Management" time="18.047">
+    <system-out><![CDATA[
+Scenario: Search for a product                  &amp#27;[90m# features/product.feature:6&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mI am on the products page&amp#27;[0m               &amp#27;[90m# com.nuces.sqe.framework.steps.ProductSteps.i_am_on_the_products_page()&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mI search for &amp#27;[0m&amp#27;[32m&amp#27;[1m"Dress"&amp#27;[0m                     &amp#27;[90m# com.nuces.sqe.framework.steps.ProductSteps.i_search_for(java.lang.String)&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mI should see products related to &amp#27;[0m&amp#27;[32m&amp#27;[1m"Dress"&amp#27;[0m &amp#27;[90m# com.nuces.sqe.framework.steps.ProductSteps.i_should_see_products_related_to(java.lang.String)&amp#27;[0m
+]]></system-out>
+    <system-err><![CDATA[[main] INFO io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 143.0.7499.40 (resolved driver for Chrome 143)
+[main] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\Ali Qaisar\.cache\selenium\chromedriver\win64\143.0.7499.40\chromedriver.exe
+Dec 05, 2025 12:03:52 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 143
+Dec 05, 2025 12:03:52 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 143.0.7499.40. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.23.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="Open product details page" classname="Product Management" time="11.488">
+    <system-out><![CDATA[
+Scenario: Open product details page &amp#27;[90m# features/product.feature:10&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mI am on the products page&amp#27;[0m   &amp#27;[90m# com.nuces.sqe.framework.steps.ProductSteps.i_am_on_the_products_page()&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mI click on the first product&amp#27;[0m &amp#27;[90m# com.nuces.sqe.framework.steps.ProductSteps.i_click_on_the_first_product()&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mI should see product details&amp#27;[0m &amp#27;[90m# com.nuces.sqe.framework.steps.ProductSteps.i_should_see_product_details()&amp#27;[0m
+]]></system-out>
+    <system-err><![CDATA[[main] INFO io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 143.0.7499.40 (resolved driver for Chrome 143)
+[main] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\Ali Qaisar\.cache\selenium\chromedriver\win64\143.0.7499.40\chromedriver.exe
+Dec 05, 2025 12:04:10 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 143
+Dec 05, 2025 12:04:10 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 143.0.7499.40. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.23.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="Add product to cart" classname="Product Management" time="12.048">
+    <system-out><![CDATA[
+Scenario: Add product to cart              &amp#27;[90m# features/product.feature:14&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mI am on the products page&amp#27;[0m          &amp#27;[90m# com.nuces.sqe.framework.steps.ProductSteps.i_am_on_the_products_page()&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mI add the first product to the cart&amp#27;[0m &amp#27;[90m# com.nuces.sqe.framework.steps.ProductSteps.i_add_the_first_product_to_the_cart()&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mthe cart count should increase&amp#27;[0m      &amp#27;[90m# com.nuces.sqe.framework.steps.ProductSteps.the_cart_count_should_increase()&amp#27;[0m
+]]></system-out>
+    <system-err><![CDATA[[main] INFO io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 143.0.7499.40 (resolved driver for Chrome 143)
+[main] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\Ali Qaisar\.cache\selenium\chromedriver\win64\143.0.7499.40\chromedriver.exe
+Dec 05, 2025 12:04:21 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 143
+Dec 05, 2025 12:04:21 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 143.0.7499.40. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.23.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="Remove product from cart" classname="Product Management" time="20.214">
+    <error message="no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;a[href=&apos;/delete_quantity/1&apos;]&quot;}&#10;  (Session info: chrome=143.0.7499.40)&#10;For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception&#10;Build info: version: &apos;4.23.0&apos;, revision: &apos;4df0a231af&apos;&#10;System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;25.0.1&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [91970187f41037bd379a7519c1dae129, findElement {value=a[href=&apos;/delete_quantity/1&apos;], using=css selector}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 143.0.7499.40, chrome: {chromedriverVersion: 143.0.7499.40 (c23ff452476d..., userDataDir: C:\Users\ALIQAI~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:9061}, goog:processID: 1748, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:9061/devtool..., se:cdpVersion: 143.0.7499.40, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 91970187f41037bd379a7519c1dae129" type="org.openqa.selenium.NoSuchElementException"><![CDATA[org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"css selector","selector":"a[href='/delete_quantity/1']"}
+  (Session info: chrome=143.0.7499.40)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.23.0', revision: '4df0a231af'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '25.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [91970187f41037bd379a7519c1dae129, findElement {value=a[href='/delete_quantity/1'], using=css selector}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 143.0.7499.40, chrome: {chromedriverVersion: 143.0.7499.40 (c23ff452476d..., userDataDir: C:\Users\ALIQAI~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:9061}, goog:processID: 1748, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:9061/devtool..., se:cdpVersion: 143.0.7499.40, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 91970187f41037bd379a7519c1dae129
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:527)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:351)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy25.isDisplayed(Unknown Source)
+	at com.nuces.sqe.framework.pages.CartPage.removeFirstItem(CartPage.java:41)
+	at com.nuces.sqe.framework.steps.ProductSteps.i_remove_the_product_from_the_cart(ProductSteps.java:72)
+	at ✽.I remove the product from the cart(classpath:features/product.feature:20)
+]]></error>
+    <system-out><![CDATA[
+Scenario: Remove product from cart         &amp#27;[90m# features/product.feature:18&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mI am on the products page&amp#27;[0m          &amp#27;[90m# com.nuces.sqe.framework.steps.ProductSteps.i_am_on_the_products_page()&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mI have added a product to the cart&amp#27;[0m &amp#27;[90m# com.nuces.sqe.framework.steps.ProductSteps.i_have_added_a_product_to_the_cart()&amp#27;[0m
+  &amp#27;[31mWhen &amp#27;[0m&amp#27;[31mI remove the product from the cart&amp#27;[0m  &amp#27;[90m# com.nuces.sqe.framework.steps.ProductSteps.i_remove_the_product_from_the_cart()&amp#27;[0m
+      &amp#27;[31morg.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"a[href='/delete_quantity/1']"}
+  (Session info: chrome=143.0.7499.40)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.23.0', revision: '4df0a231af'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '25.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [91970187f41037bd379a7519c1dae129, findElement {value=a[href='/delete_quantity/1'], using=css selector}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 143.0.7499.40, chrome: {chromedriverVersion: 143.0.7499.40 (c23ff452476d..., userDataDir: C:\Users\ALIQAI~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:9061}, goog:processID: 1748, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:9061/devtool..., se:cdpVersion: 143.0.7499.40, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 91970187f41037bd379a7519c1dae129
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:527)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:351)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy25.isDisplayed(Unknown Source)
+	at com.nuces.sqe.framework.pages.CartPage.removeFirstItem(CartPage.java:41)
+	at com.nuces.sqe.framework.steps.ProductSteps.i_remove_the_product_from_the_cart(ProductSteps.java:72)
+	at ✽.I remove the product from the cart(classpath:features/product.feature:20)
+&amp#27;[0m
+  &amp#27;[36mThen &amp#27;[0m&amp#27;[36mthe cart should be empty&amp#27;[0m            &amp#27;[90m# com.nuces.sqe.framework.steps.ProductSteps.the_cart_should_be_empty()&amp#27;[0m
+]]></system-out>
+    <system-err><![CDATA[[main] INFO io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 143.0.7499.40 (resolved driver for Chrome 143)
+[main] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\Ali Qaisar\.cache\selenium\chromedriver\win64\143.0.7499.40\chromedriver.exe
+Dec 05, 2025 12:04:34 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 143
+Dec 05, 2025 12:04:34 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 143.0.7499.40. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.23.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="Verify title and URLs" classname="UI Validation" time="8.675">
+    <system-out><![CDATA[
+Scenario: Verify title and URLs                       &amp#27;[90m# features/ui_validation.feature:3&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mI am on the home page&amp#27;[0m                         &amp#27;[90m# com.nuces.sqe.framework.steps.UiValidationSteps.i_am_on_the_home_page()&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mthe page title should be &amp#27;[0m&amp#27;[32m&amp#27;[1m"Automation Exercise"&amp#27;[0m &amp#27;[90m# com.nuces.sqe.framework.steps.UiValidationSteps.the_page_title_should_be(java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mthe URL should contain &amp#27;[0m&amp#27;[32m&amp#27;[1m"automationexercise"&amp#27;[0m     &amp#27;[90m# com.nuces.sqe.framework.steps.UiValidationSteps.the_url_should_contain(java.lang.String)&amp#27;[0m
+]]></system-out>
+    <system-err><![CDATA[[main] INFO io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 143.0.7499.40 (resolved driver for Chrome 143)
+[main] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\Ali Qaisar\.cache\selenium\chromedriver\win64\143.0.7499.40\chromedriver.exe
+Dec 05, 2025 12:04:54 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 143
+Dec 05, 2025 12:04:54 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 143.0.7499.40. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.23.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="Verify broken links or images" classname="UI Validation" time="11.977">
+    <system-out><![CDATA[
+Scenario: Verify broken links or images   &amp#27;[90m# features/ui_validation.feature:8&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mI am on the home page&amp#27;[0m             &amp#27;[90m# com.nuces.sqe.framework.steps.UiValidationSteps.i_am_on_the_home_page()&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mI should not see any broken images&amp#27;[0m &amp#27;[90m# com.nuces.sqe.framework.steps.UiValidationSteps.i_should_not_see_any_broken_images()&amp#27;[0m
+]]></system-out>
+    <system-err><![CDATA[[main] INFO io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 143.0.7499.40 (resolved driver for Chrome 143)
+[main] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\Ali Qaisar\.cache\selenium\chromedriver\win64\143.0.7499.40\chromedriver.exe
+Dec 05, 2025 12:05:02 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 143
+Dec 05, 2025 12:05:02 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 143.0.7499.40. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.23.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+</testsuite>
