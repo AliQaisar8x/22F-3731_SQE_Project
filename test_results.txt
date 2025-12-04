@@ -1,0 +1,53 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ------------------< com.nuces.sqe:ui-test-framework >-------------------
+[INFO] Building UI Test Automation Framework - SQE Project 1.0-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- clean:3.2.0:clean (default-clean) @ ui-test-framework ---
+[INFO] Deleting C:\Users\Ali Qaisar\Documents\OS\SPM\SQE_UI_Framework\target
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ ui-test-framework ---
+[INFO] skip non existing resourceDirectory C:\Users\Ali Qaisar\Documents\OS\SPM\SQE_UI_Framework\src\main\resources
+[INFO] 
+[INFO] --- compiler:3.13.0:compile (default-compile) @ ui-test-framework ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ ui-test-framework ---
+[INFO] Copying 10 resources from src\test\resources to target\test-classes
+[INFO] 
+[INFO] --- compiler:3.13.0:testCompile (default-testCompile) @ ui-test-framework ---
+[INFO] Recompiling the module because of changed source code.
+[INFO] Compiling 18 source files with javac [debug release 17] to target\test-classes
+[INFO] -------------------------------------------------------------
+[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[ERROR] /C:/Users/Ali Qaisar/Documents/OS/SPM/SQE_UI_Framework/src/test/java/com/nuces/sqe/framework/steps/LoginSteps.java:[39,40] cannot find symbol
+  symbol:   method isLogoutButtonVisible()
+  location: variable loginPage of type com.nuces.sqe.framework.pages.LoginPage
+[ERROR] /C:/Users/Ali Qaisar/Documents/OS/SPM/SQE_UI_Framework/src/test/java/com/nuces/sqe/framework/steps/LoginSteps.java:[64,18] cannot find symbol
+  symbol:   method logout()
+  location: variable loginPage of type com.nuces.sqe.framework.pages.LoginPage
+[INFO] 2 errors 
+[INFO] -------------------------------------------------------------
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  4.006 s
+[INFO] Finished at: 2025-12-04T22:12:11+05:00
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.13.0:testCompile (default-testCompile) on project ui-test-framework: Compilation failure: Compilation failure: 
+[ERROR] /C:/Users/Ali Qaisar/Documents/OS/SPM/SQE_UI_Framework/src/test/java/com/nuces/sqe/framework/steps/LoginSteps.java:[39,40] cannot find symbol
+[ERROR]   symbol:   method isLogoutButtonVisible()
+[ERROR]   location: variable loginPage of type com.nuces.sqe.framework.pages.LoginPage
+[ERROR] /C:/Users/Ali Qaisar/Documents/OS/SPM/SQE_UI_Framework/src/test/java/com/nuces/sqe/framework/steps/LoginSteps.java:[64,18] cannot find symbol
+[ERROR]   symbol:   method logout()
+[ERROR]   location: variable loginPage of type com.nuces.sqe.framework.pages.LoginPage
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException

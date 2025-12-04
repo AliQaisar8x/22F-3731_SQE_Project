@@ -1,0 +1,22 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ------------------< com.nuces.sqe:ui-test-framework >-------------------
+[INFO] Building UI Test Automation Framework - SQE Project 1.0-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- clean:3.2.0:clean (default-clean) @ ui-test-framework ---
+[INFO] Deleting C:\Users\Ali Qaisar\Documents\OS\SPM\SQE_UI_Framework\target
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  2.918 s
+[INFO] Finished at: 2025-12-04T22:19:48+05:00
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-clean-plugin:3.2.0:clean (default-clean) on project ui-test-framework: Failed to clean project: Failed to delete C:\Users\Ali Qaisar\Documents\OS\SPM\SQE_UI_Framework\target\cucumber-reports\report.json -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoExecutionException
